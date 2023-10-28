@@ -7,12 +7,12 @@ public class MaxNumber {
 		int[] arr = {1, 2, 3, 4, 5};
         
         // Gọi hàm findMax và in kết quả
-        int max = findMax(arr);
+        String max = findMax(arr);
         System.out.println("Số lớn nhất trong mảng là: " + max);
 	}
 	
 	// Hàm tìm số lớn nhất trong mảng
-    public static int findMax(int[] arr) {
+    public static String findMax(int[] arr) {
         if (arr.length == 0) {
             throw new IllegalArgumentException("Mảng rỗng, không có số lớn nhất để tìm.");
         }
@@ -25,7 +25,7 @@ public class MaxNumber {
             }
         }
         
-        return max;
+        return Integer.toString(max);
     }
 
 }
